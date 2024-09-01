@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Mon May 20 22:46:06 2024
+# Process ID: 17284
+# Current directory: C:/Users/eren1/VivadoProjects/project_05_eren_vga_01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15068 C:\Users\eren1\VivadoProjects\project_05_eren_vga_01\project_05_eren_vga_01.xpr
+# Log file: C:/Users/eren1/VivadoProjects/project_05_eren_vga_01/vivado.log
+# Journal file: C:/Users/eren1/VivadoProjects/project_05_eren_vga_01\vivado.jou
+# Running On: ERENACAREL, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16898 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/eren1/VivadoProjects/project_05_eren_vga_01/project_05_eren_vga_01.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/eren1/VivadoProjects/project_05_eren_vga_01/project_05_eren_vga_01.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/eren1/VivadoProjects/project_05_eren_vga_01/project_05_eren_vga_01.srcs/sim_1/new/tb_vga.vhd w ]
+add_files -fileset sim_1 C:/Users/eren1/VivadoProjects/project_05_eren_vga_01/project_05_eren_vga_01.srcs/sim_1/new/tb_vga.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {0} -objects [get_filesets sim_1]
+launch_simulation
+source top.tcl
+update_compile_order -fileset sim_1
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+source top.tcl
+run all
+close_sim

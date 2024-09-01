@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue May 21 14:59:15 2024
+# Process ID: 16880
+# Current directory: C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4944 C:\Users\eren1\VivadoProjects\project_05_eren_uart_rx_vga_01\project_05_eren_uart_rx_vga_01.xpr
+# Log file: C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01/vivado.log
+# Journal file: C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01\vivado.jou
+# Running On: ERENACAREL, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16898 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01/project_05_eren_uart_rx_vga_01.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01/project_05_eren_uart_rx_vga_01.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/eren1/VivadoProjects/project_05_eren_uart_rx_vga_01/project_05_eren_uart_rx_vga_01.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1

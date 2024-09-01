@@ -1,0 +1,127 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Mon May 20 13:09:15 2024
+| Host         : ERENACAREL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    49 |
+|    Minimum number of control sets                        |    49 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   164 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    49 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             188 |           66 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             211 |           67 |
+| Yes          | No                    | No                     |             164 |           64 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              73 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                       Enable Signal                       |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | i_uart_rx/E[1]                                            |                                                               |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | i_uart_rx/E[0]                                            |                                                               |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | i_uart_rx/E[2]                                            |                                                               |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | dakika_increment_reg_n_0                                  | i_dakika_bcd_increment/birler[3]_i_1__1_n_0                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | saniye_increment_reg_n_0                                  | i_saniye_bcd_increment/birler[3]_i_1__0_n_0                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/shift_frame               | Inst_MouseCtl/Inst_Ps2Interface/reset_bit_count               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | i_saniye_bcd_increment/birler                             | i_saniye_bcd_increment/onlar[3]_i_1__0_n_0                    |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | i_dakika_bcd_increment/birler                             | i_dakika_bcd_increment/onlar[3]_i_1__1_n_0                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_2 |                                                               |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | i_salise_bcd_increment/birler                             | i_salise_bcd_increment/onlar[3]_i_1_n_0                       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/data_inter0                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/clk_inter0                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | salise_increment_reg_n_0                                  | i_salise_bcd_increment/birler[3]_i_1_n_0                      |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[13]_i_1_n_0 |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[5]_i_1_n_0   |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | state_first                                               |                                                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | dakika_counter[5]_i_1_n_0                                 | i_reset_deb/reset_deb                                         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0  |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | counter                                                   |                                                               |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | duty_cycle_ld17                                           |                                                               |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | saniye_counter[6]_i_1_n_0                                 | i_reset_deb/reset_deb                                         |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0  |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | i_uart_rx/vga_blue_cmb                                    |                                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | i_uart_rx/vga_green_cmb                                   |                                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | i_uart_rx/vga_red_cmb                                     |                                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_0 |                                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/FSM_onehot_state_reg[0]_1 |                                                               |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/load_rx_data              |                                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/write_data                                  |                                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[12]_i_1_n_0 |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG |                                                           | i_uart_rx/bittimer[10]_i_1_n_0                                |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/Inst_Ps2Interface/frame[9]_i_1_n_0          |                                                               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG |                                                           | eqOp5_in                                                      |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG | i_uart_rx/bitcntr                                         |                                                               |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/y_new_reg_n_0                               |                                                               |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | eqOp5_in                                                  | v_cntr_reg0                                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | anodes[5]                                                 |                                                               |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG | Inst_MouseCtl/x_new_reg_n_0                               |                                                               |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG |                                                           | i_pwm_ld17/p_0_in                                             |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG |                                                           | i_pwm_ld16/p_0_in                                             |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG |                                                           | i_start_deb/timer[0]_i_1__1_n_0                               |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG |                                                           | i_reset_deb/timer[0]_i_1__2_n_0                               |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG |                                                           | anodes[5]                                                     |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG | continue                                                  | i_reset_deb/reset_deb                                         |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG |                                                           | counter                                                       |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG | v_sync_reg                                                |                                                               |               12 |             23 |         1.92 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/reset_timeout_cnt_reg_n_0                       |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG |                                                           | Inst_MouseCtl/periodic_check_cnt[0]_i_1_n_0                   |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG |                                                           |                                                               |               66 |            188 |         2.85 |
++----------------+-----------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+--------------+
+
+
