@@ -1,0 +1,9 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sim_1/new/tb_bcd.vhd,1716234091,vhdl,,,,cfg_tb_top;tb_top,,,,,,,,
+C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/bcd_incrementor.vhd,1715851613,vhdl,,,,bcd_incrementor,,,,,,,,
+C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/bcd_to_sevenseg.vhd,1715851630,vhdl,,,,bcd_to_sevenseg,,,,,,,,
+C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/debounce.vhd,1715851652,vhdl,,,,debounce,,,,,,,,
+C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/top.vhd,1715851672,vhdl,,,,top,,,,,,,,

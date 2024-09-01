@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_uart_rx_func_impl.vhd" \
+"../../../../../project_03_burak_uart_rx_01.srcs/sim_1/new/tb_uart_rx.vhd" \
+
+# Do not sort compile order
+nosort

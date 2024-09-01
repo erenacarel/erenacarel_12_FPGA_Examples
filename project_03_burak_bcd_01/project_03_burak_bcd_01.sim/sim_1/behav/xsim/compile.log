@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/bcd_incrementor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_incrementor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/bcd_to_sevenseg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_to_sevenseg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/eren1/VivadoProjects/project_03_burak_bcd_01/project_03_burak_bcd_01.srcs/sim_1/new/tb_bcd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_top'

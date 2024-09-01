@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: SIM DONE
+Time: 300500 ns  Iteration: 0  Process: /tb_uart_rx/P_STIMULI  File: C:/Users/eren1/VivadoProjects/project_03_burak_uart_rx_03/project_03_burak_uart_rx_03.srcs/sim_1/new/tb_uart_rx.vhd
+$finish called at time : 300500 ns : File "C:/Users/eren1/VivadoProjects/project_03_burak_uart_rx_03/project_03_burak_uart_rx_03.srcs/sim_1/new/tb_uart_rx.vhd" Line 96

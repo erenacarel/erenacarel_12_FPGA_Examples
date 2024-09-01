@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_03_burak_bcd_01.srcs/sources_1/new/bcd_incrementor.vhd" \
+"../../../../project_03_burak_bcd_01.srcs/sources_1/new/bcd_to_sevenseg.vhd" \
+"../../../../project_03_burak_bcd_01.srcs/sources_1/new/debounce.vhd" \
+"../../../../project_03_burak_bcd_01.srcs/sources_1/new/top.vhd" \
+"../../../../project_03_burak_bcd_01.srcs/sim_1/new/tb_bcd.vhd" \
+
+# Do not sort compile order
+nosort
