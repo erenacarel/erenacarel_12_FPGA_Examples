@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri May 17 00:18:32 2024
+# Process ID: 11676
+# Current directory: C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6232 C:\Users\eren1\VivadoProjects\project_04_burak_uart_rx_02\project_04_burak_uart_rx_02.xpr
+# Log file: C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/vivado.log
+# Journal file: C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02\vivado.jou
+# Running On: ERENACAREL, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 14, Host memory: 16898 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/debounce.vhd w ]
+add_files C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/debounce.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/bcd_incrementor.vhd w ]
+add_files C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/bcd_incrementor.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/bcd_to_sevenseg.vhd w ]
+add_files C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/bcd_to_sevenseg.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/pwm.vhd w ]
+add_files C:/Users/eren1/VivadoProjects/project_04_burak_uart_rx_02/project_04_burak_uart_rx_02.srcs/sources_1/new/pwm.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_run impl_1
+close_design
