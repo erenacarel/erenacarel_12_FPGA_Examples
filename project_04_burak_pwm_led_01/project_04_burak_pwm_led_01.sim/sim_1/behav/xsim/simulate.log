@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: SIM DONE
+Time: 35 ms  Iteration: 0  Process: /tb_pwm/P_STIMULI  File: C:/Users/eren1/VivadoProjects/project_04_burak_pwm_led_01/project_04_burak_pwm_led_01.srcs/sim_1/new/tb_pwm.vhd
+$finish called at time : 35 ms : File "C:/Users/eren1/VivadoProjects/project_04_burak_pwm_led_01/project_04_burak_pwm_led_01.srcs/sim_1/new/tb_pwm.vhd" Line 83
